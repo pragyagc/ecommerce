@@ -1,0 +1,353 @@
+/* Styling for the banner image section */
+#bannerimage {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+    background: url('img/banner.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Centering and adding a background overlay for better text visibility */
+#bannerimage .container {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    padding: 20px;
+    border-radius: 8px; /* Smooth rounded corners */
+    display: inline-block;
+}
+
+/* Styling the heading */
+#bannerimage h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Styling the subtext */
+#bannerimage p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Styling the button */
+#bannerimage a.btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#bannerimage a.btn:hover {
+    background-color: #ff3333; /* Darker red on hover */
+    color: #fff;
+}
+
+/* Styling the navbar */
+.navbar {
+    background-color: #f9e79f;/* Set your custom background color */
+    color: #000;/* Remove any border */
+    margin-bottom: 0;/* Remove bottom margin */
+    padding: 3px 0;
+
+}
+/* Search bar container */
+.navbar .search-container {
+    display: flex;
+    align-items: center;
+}
+/* Search input field */
+.navbar .search-input {
+    width: 500px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+/* Input focus effect */
+.navbar .search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Search button */
+.navbar .search-button {
+    background-color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 60%;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.navbar .search-button:hover {
+    background-color: #0056b3;
+}
+
+/* Icon inside the button */
+.navbar .search-button i {
+    font-size: 25px;
+}
+
+.navbar a.navbar-brand {
+    color: #28b463; /* Brand link color */
+    font-size: 24px; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+.navbar .navbar-nav > li > a:hover {
+    color: #28b463; /* Default link color */
+    font-size: 18px; /* Font size for links */
+    padding: 10px 15px; /* Adjust padding for better spacing */
+    transition: background-color 0.3s ease-in-out; /* Add hover effect transition */
+    background-color: #82e0aa; /* Highlight link on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Navbar toggle button for mobile view */
+.navbar-toggle {
+    border-color: #000; /* Toggle button border color */
+}
+
+/* Style the logo */
+.logo {
+    margin-right: 10px; /* Add spacing between logo and brand name */
+    border-radius: 5px; /* Add rounded corners to the logo */
+}
+
+/* General body and background styling for signup page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffcc;
+    margin: 0;
+    padding: 0;
+}
+/* Container for centering the signup form */
+.signup-container .container {
+    max-width: 1000px; /* Limit the width */
+    margin: 50px auto; /* Center the container */
+    padding: 20px;
+}
+
+/* Panel styling */
+.panel {
+    border: 1px solid #007bff; /* Border color for the panel */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.panel-heading {
+    background-color: #007bff; /* Background color for the panel header */
+    color: white; /* Text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.panel-body {
+    padding: 30px;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.panel-footer {
+    text-align: center;
+    background-color: #f1f1f1; /* Footer background */
+    padding: 10px;
+}
+
+.panel-footer a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+}
+
+.panel-footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Form input fields */
+.form-group input {
+    width: 100%; /* Make input fields full width */
+    padding: 10px; /* Add some padding */
+    margin: 10px 0; /* Add space between the fields */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.form-group input:focus {
+    border-color: #007bff; /* Highlight the input border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Light glow effect */
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%; /* Full-width button */
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .container {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .panel-heading {
+        padding: 10px; /* Reduce padding in the panel heading */
+    }
+}
+/* General Footer Styling */
+footer {
+    background-color: #343a40; /* Dark background */
+    color: #fff; /* White text */
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    clear: both; /* Ensure footer stays below content */
+    position: relative; /* Keep it specific to the footer */
+    width: 100%;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Single Box Styling */
+footer .single-box {
+    margin-bottom: 30px;
+}
+
+footer .single-box h2 {
+    font-size: 18px;
+    color: #ffb400; /* Accent color */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer .single-box p {
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* List Styling */
+footer .single-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .single-box ul li {
+    margin-bottom: 10px;
+}
+
+footer .single-box ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .single-box ul li a:hover {
+    color: #ffb400;
+}
+
+/* Card Icons */
+footer .card-area i {
+    font-size: 24px;
+    color: #ffb400;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+footer .card-area i:hover {
+    transform: scale(1.1);
+}
+
+/* Newsletter Input */
+footer .input-group {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+footer .input-group input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    flex: 1;
+    outline: none;
+}
+
+footer .input-group .input-group-text {
+    background-color: #ffb400;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+footer .input-group .input-group-text i {
+    font-size: 16px;
+}
+
+/* Social Media Icons */
+footer .socials i {
+    font-size: 24px;
+    color: #ffb400;
+    margin-right: 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+footer .socials i:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .single-box {
+        width: 100%;
+    }
+
+    footer .input-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    footer .input-group input {
+        margin-bottom: 10px;
+    }
+}
+
+
