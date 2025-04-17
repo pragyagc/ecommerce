@@ -2,10 +2,9 @@
 session_start();
 require 'connection.php';
 
-// Check if the user is logged in
-if (!isset($_SESSION['email'])) {
-    header('location: login.php');
-    exit();
+// Check if user is logged in
+if (!isset($_SESSION['id'])) {
+    die("<div class='alert'>Error: User is not logged in. <a href='login.php'>Login here</a></div>");
 }
 
 $user_id = $_SESSION['id'];
@@ -28,7 +27,6 @@ $user_products_query = "
 $user_products_result = mysqli_query($con, $user_products_query) or die(mysqli_error($con));
 $no_of_user_products = mysqli_num_rows($user_products_result);
 $sum = 0;
-
 ?>
 
 <!DOCTYPE html>
